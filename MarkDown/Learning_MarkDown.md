@@ -134,7 +134,7 @@ HTML Tag를 사용한 부분이 많이 있으나 GitHub Markdown에서는 적용
   <br>
 </div>
 
-> Heading Alternate Syntax  
+> Heading Alternate Syntax O  
 > 
 > TEST
 > =
@@ -196,7 +196,7 @@ HTML Tag를 사용한 부분이 많이 있으나 GitHub Markdown에서는 적용
 > 
 > TEST
 
-> Line Breaks Syntax
+> Line Breaks Syntax O
 > <br>
 > TEST
 > <br><br>
@@ -239,6 +239,10 @@ HTML Tag를 사용한 부분이 많이 있으나 GitHub Markdown에서는 적용
 
 > TEST (Two Spaces)  
 > TEST
+
+> TEST  
+> \<br>  
+> TEST
  
 <br>
 
@@ -254,6 +258,11 @@ HTML Tag를 사용한 부분이 많이 있으나 GitHub Markdown에서는 적용
 
 > Line Breaks Syntax O  
 > TEST  
+> TEST
+
+> \<br> HTML Tag Line Breaks Syntax O  
+> TEST
+> <br>
 > TEST
 
 <br>
@@ -319,8 +328,6 @@ HTML Tag를 사용한 부분이 많이 있으나 GitHub Markdown에서는 적용
 
 <br>
 
----
-
 <span style="color:#FFB4B4">
 
 #### 2.5.2 Emphasis Italic
@@ -370,8 +377,6 @@ HTML Tag를 사용한 부분이 많이 있으나 GitHub Markdown에서는 적용
 
 <br>
 
----
-
 <span style="color:#FFB4B4">
 
 #### 2.5.3 Emphasis Bold & Italic
@@ -395,7 +400,7 @@ HTML Tag를 사용한 부분이 많이 있으나 GitHub Markdown에서는 적용
 
 <span style="color:#FFD2D2">
 
-#### 2.5.3.2
+#### 2.5.3.2 Emphasis Bold & Italic Syntax
 
 </span>
 
@@ -420,6 +425,8 @@ HTML Tag를 사용한 부분이 많이 있으나 GitHub Markdown에서는 적용
 > T***ES***T
 
 <br>
+
+---
 
 <span style="color:#FF8282">
 
@@ -467,22 +474,24 @@ HTML Tag를 사용한 부분이 많이 있으나 GitHub Markdown에서는 적용
 > Blockquotes Syntax X  
 > TEST
 
-> Basic Blockquotes Syntax  
+> Basic Blockquotes Syntax O  
 > > TEST
 
-> Blockquotes Syntax with Multiple Paragraphs  
+> Blockquotes Syntax with Multiple Paragraphs O  
 > > TEST  
 > > TEST
 
-> Nested Blockquotes Syntax
+> Nested Blockquotes Syntax O  
 > > TEST  
 > >> TEST
 
-> Blockquotes Syntax With Other Syntax  
+> Blockquotes Syntax With Other Syntax O  
 > > TEST
 > > - T***ES***T
 
 <br>
+
+---
 
 <span style="color:#FF8282">
 
@@ -491,45 +500,38 @@ HTML Tag를 사용한 부분이 많이 있으나 GitHub Markdown에서는 적용
 </span>
 
 - 항목들을 정렬된 List와 정렬되지 않은 List로 구성
-- Ordered List
-  - 숫자 뒤에 . 기호가 있는 줄을 추가하여 순서가 지정된 List 표현
-  - 번호는 번호순일 필요는 없으나 시작 숫자는 반드시 1부터 시작
-  - 중첩된 List를 만들기 위해서는 들여쓰기 2번 한 후 숫자 뒤에 . 기호가 있는 줄 추가
-    - Ordered List 내 Unordered List를 중첩하여 사용 가능
-- Unordered List
-  - \- / \* / \+ 기호가 있는 줄을 추가하여 순서가 지정되지 않은 List 표현
-  - 줄 내용중 숫자와 . 기호를 포함한 내용이 있는 경우 . 기호 앞에 \\ [ Escape ]를 사용하여 정렬 List 표현 제한
-  - 중첩된 List를 만들기 위해서는 들여쓰기 한 후 중첩전에 사용한 \- / \* / \+ 기호가 있는 줄 추가
-    - Unordered List 내 Ordered List를 중첩하여 사용 가능
-- Use Syntax in the List
-  - List의 연속성을 유지하면서 다른 Syntax를 추가하려면 Space 공백 4개 또는 Tab 1개를 단어 또는 문장 앞에 추가
-  - Code Blocks은 List 내에서 Space 공백 8개 또는 Tab 2개를 단어 또는 문장 앞에 추가
 
 <br>
 
 <span style="color:#FFB4B4">
 
-#### 2.7.1 Lists Syntax Cautions
+### 2.7.1 Ordered List
 
 </span>
 
-- Ordered List
-  - 일부 Markdown Application에서 ) 기호를 . 기호 대신으로 사용할 수 있으나 호환성을 위해 . 기호만 사용
-- Unordered List
-  - 호환성을 위해 연속된 List 내에서 \- / \* / \+ 기호를 혼합하지 않고 1가지 기호만 이어서 사용
-- Use Syntax in the List
-  - List 내 다른 Syntax 사용시 사용하는 Syntax의 앞 뒤로 빈 줄을 추가
-  - 정렬 / 정렬되지 않은 List와 줄간격의 차이가 발생
+- 숫자 뒤에 . 기호가 있는 줄을 추가하여 순서가 지정된 List 표현
+- 번호는 번호순일 필요는 없으나 시작 숫자는 반드시 1부터 시작
+- 중첩된 List를 만들기 위해서는 들여쓰기 2번 한 후 숫자 뒤에 . 기호가 있는 줄 추가
+  - Ordered List 내 Unordered List를 중첩하여 사용 가능
 
 <br>
 
-<span style="color:#FFB4B4">
+<span style="color:#FFD2D2">
 
-#### 2.7.2 Lists Syntax
+### 2.7.1.1 Ordered List Cautions
 
 </span>
 
-> Ordered List  
+- 일부 Markdown Application에서 ) 기호를 . 기호 대신으로 사용할 수 있으나 호환성을 위해 . 기호만 사용
+
+<br>
+
+<span style="color:#FFD2D2">
+
+### 2.7.1.2 Ordered List Syntax
+
+</span>
+
 > 1\. TEST  
 > 2\. TEST  
 > 3\. TEST  
@@ -547,14 +549,99 @@ HTML Tag를 사용한 부분이 많이 있으나 GitHub Markdown에서는 적용
 
 > 1\. TEST  
 > 2\. TEST  
-> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1\. TEST  
-> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2\. TEST  
+> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1\. TEST  
+> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2\. TEST  
+> 3\. TEST  
+> 4\. TEST
+
+> 1\. TEST  
+> 2\. TEST  
+> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- TEST  
+> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- TEST  
 > 3\. TEST  
 > 4\. TEST
 
 <br>
 
-> Unrdered List  
+<span style="color:#FFD2D2">
+
+### 2.7.1.3 Ordered List Syntax Example
+
+</span>
+
+> Ordered List Syntax X  
+> TEST
+
+> Ordered List Syntax O
+> 1. TEST  
+> 2. TEST  
+> 3. TEST  
+> 4. TEST
+
+> Only One Number Ordered List Syntax O
+> 1. TEST  
+> 1. TEST  
+> 1. TEST  
+> 1. TEST
+
+> Random Number Ordered List Syntax O
+> 1. TEST  
+> 8. TEST  
+> 23. TEST  
+> 15. TEST
+
+> Nested Ordered List Syntax O
+> 1. TEST  
+> 2. TEST  
+>     1. TEST  
+>     2. TEST  
+> 3. TEST  
+> 4. TEST
+
+> Use Unordered Syntax in the Ordered List Syntax O
+> 1. TEST  
+> 2. TEST  
+>     - TEST  
+>     - TEST  
+> 3. TEST  
+> 4. TEST
+
+<br>
+
+<span style="color:#FFB4B4">
+
+### 2.7.2 Unordered List
+
+</span>
+
+- \- / \* / \+ 기호가 있는 줄을 추가하여 순서가 지정되지 않은 List 표현
+- 줄 내용중 숫자와 . 기호를 포함한 내용이 있는 경우 . 기호 앞에 \\ [ Escape ]를 사용하여 정렬 List 표현 제한
+- 중첩된 List를 만들기 위해서는 들여쓰기 한 후 중첩전에 사용한 \- / \* / \+ 기호가 있는 줄 추가
+  - Unordered List 내 Ordered List를 중첩하여 사용 가능
+
+<br>
+
+<span style="color:#FFD2D2">
+
+### 2.7.2.1 Unordered List Cautions
+
+</span>
+
+- 호환성을 위해 연속된 List 내에서 \- / \* / \+ 기호를 혼합하지 않고 1가지 기호만 이어서 사용
+
+<br>
+
+<span style="color:#FFD2D2">
+
+### 2.7.2.2 Unordered List Syntax
+
+</span>
+
+> \- TEST  
+> \- TEST  
+> \- TEST  
+> \- TEST
+
 > \* TEST  
 > \* TEST  
 > \* TEST  
@@ -567,135 +654,171 @@ HTML Tag를 사용한 부분이 많이 있으나 GitHub Markdown에서는 적용
 
 > \- TEST  
 > \- TEST  
-> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- TEST  
-> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- TEST  
+> &nbsp;&nbsp;&nbsp;&nbsp;\+ TEST  
+> &nbsp;&nbsp;&nbsp;&nbsp;\+ TEST  
+> \- TEST  
+> \- TEST
+
+> \- TEST  
+> \- TEST  
+> &nbsp;&nbsp;&nbsp;&nbsp;1\. TEST  
+> &nbsp;&nbsp;&nbsp;&nbsp;1\. TEST  
 > \- TEST  
 > \- TEST
 
 <br>
 
-> Use Syntax in the List   
+<span style="color:#FFD2D2">
+
+### 2.7.2.3 Unordered List Syntax Example
+
+</span>
+
+> Unordered List Syntax X  
+> TEST
+
+> \- Symbol Unordered List Syntax O
+> - TEST  
+> - TEST  
+> - TEST  
+> - TEST
+
+> \* Symbol Unordered List Syntax O
+> * TEST  
+> * TEST  
+> * TEST  
+> * TEST
+
+> \+ Symbol Unordered List Syntax O
+> + TEST  
+> + TEST  
+> + TEST  
+> + TEST
+
+> Nested Unordered List Syntax O
+> - TEST  
+> - TEST  
+>   + TEST  
+>   + TEST  
+> - TEST  
+> - TEST
+
+> Use Ordered Syntax in the Unordered List Syntax O
+> - TEST  
+> - TEST  
+>     1. TEST  
+>     2. TEST  
+> - TEST  
+> - TEST
+
+<br>
+
+<span style="color:#FFB4B4">
+
+### 2.7.3 Use Another Syntax in the List
+
+</span>
+
+- List의 연속성을 유지하면서 다른 Syntax를 추가하려면 Space 공백 4개 또는 Tab 1개를 단어 또는 문장 앞에 추가
+- Code Blocks은 List 내에서 Space 공백 8개 또는 Tab 2개를 단어 또는 문장 앞에 추가
+
+<br>
+
+<span style="color:#FFD2D2">
+
+### 2.7.3.1 Use Another Syntax in the List Cautions
+
+</span>
+
+- List 내 다른 Syntax 사용시 사용하는 Syntax의 앞 뒤로 빈 줄을 추가
+- 정렬 / 정렬되지 않은 List와 줄간격의 차이가 발생
+
+<br>
+
+<span style="color:#FFD2D2">
+
+### 2.7.3.2 Use Another Syntax in the List Syntax
+
+</span>
+  
 > 1\. TEST  
 > 2\. TEST  
 > <br>
-> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TEST  
+> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TEST  
 > <br>
 > 3\. TEST
 
 > \- TEST  
 > \- TEST  
 > <br>
-> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\> TEST  
+> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\> TEST  
 > <br>
 > \- TEST
 
 > \* TEST  
 > \* TEST  
 > <br>
-> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; TEST  
+> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; TEST  
 > <br>
 > \* TEST
 
 > \- TEST  
 > \- TEST  
 > <br>
-> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;>\<img src="https://mblogthumb-phinf.pstatic.net/MjAxOTEyMTdfMTE4/MDAxNTc2NTkzMzEzMjQ4.tda-l5AtH-amqiFmAtZzcWvN2xwMIs6MVHp1lLpLxMcg.VJL2bWBxvxLfxLml4usBhz1ixgxBcui2EEumAr6LPV4g.JPEG.prettysyjudy/IMG_7256.JPG?type=w800" width="200" height="200"/> 
+> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;>\<img src="https://mblogthumb-phinf.pstatic.net/MjAxOTEyMTdfMTE4/MDAxNTc2NTkzMzEzMjQ4.tda-l5AtH-amqiFmAtZzcWvN2xwMIs6MVHp1lLpLxMcg.VJL2bWBxvxLfxLml4usBhz1ixgxBcui2EEumAr6LPV4g.JPEG.prettysyjudy/IMG_7256.JPG?type=w800" width="200" height="200"/> 
 > <br>
 > \- TEST  
+> <br>
 > Image Source - https://m.blog.naver.com/prettysyjudy/221740818850 [빛날빈]
 
 <br>
 
-<span style="color:#FFB4B4">
+<span style="color:#FFD2D2">
 
-#### 2.7.3 Lists Syntax Example
+### 2.7.3.3 Use Another Syntax in the List Syntax Example
 
 </span>
 
-> Lists Syntax X  
+> Use Another Syntax in the List Syntax X  
 > TEST
 
-> Ordered List
-> 1. TEST  
-> 2. TEST  
-> 3. TEST  
-> 4. TEST
-
-> 1. TEST  
-> 1. TEST  
-> 1. TEST  
-> 1. TEST
-
-> 1. TEST  
-> 8. TEST  
-> 23. TEST  
-> 15. TEST
-
-> 1. TEST  
-> 2. TEST  
->     1. TEST  
->     2. TEST  
-> 3. TEST  
-> 4. TEST
-
-<br>
-
-> Unordered List  
-> - TEST  
-> - TEST  
-> - TEST  
-> - TEST
-
-> * TEST  
-> * TEST  
-> * TEST  
-> * TEST
-
-> + TEST  
-> + TEST  
-> + TEST  
-> + TEST
-
-> - TEST  
-> - TEST  
->   - TEST  
->   - TEST  
-> - TEST  
-> - TEST
-
-<br>
-
-> Use Syntax in the List  
+> Use Paragraphs Syntax in the List Syntax O  
 > 1. TEST  
 > 2. TEST  
 > 
 >     TEST  
-> 
+>
 > 3. TEST
 
+> Use Blockquotes Syntax in the List Syntax O 
 > - TEST  
 > - TEST  
 > 
 >   > TEST  
-> 
+>
 > - TEST
 
+> Use Code Blocks Syntax in the List Syntax O
 > * TEST  
 > * TEST  
 > 
 >         TEST  
-> 
+>
 > * TEST
 
+> Use Images Syntax in the List Syntax O
 > - TEST  
 > - TEST  
 > 
 >     <img src="https://mblogthumb-phinf.pstatic.net/MjAxOTEyMTdfMTE4/MDAxNTc2NTkzMzEzMjQ4.tda-l5AtH-amqiFmAtZzcWvN2xwMIs6MVHp1lLpLxMcg.VJL2bWBxvxLfxLml4usBhz1ixgxBcui2EEumAr6LPV4g.JPEG.prettysyjudy/IMG_7256.JPG?type=w800" width="200" height="200"/>
 > 
 > - TEST  
+> <br>
 > Image Source - https://m.blog.naver.com/prettysyjudy/221740818850 [빛날빈]
 
 <br>
+
+---
 
 <span style="color:#FF8282">
 
@@ -703,10 +826,204 @@ HTML Tag를 사용한 부분이 많이 있으나 GitHub Markdown에서는 적용
 
 </span>
 
+- 텍스트를 코드로 변환하여 표현 가능
 
+<br>
 
+<span style="color:#FFB4B4">
 
+### 2.8.1 Backticks
 
+</span>
+
+- ` [ 백틱 ]기호를 사용하여 단어 또는 문장을 코드로 표현 가능
+
+<br>
+
+<span style="color:#FFD2D2">
+
+### 2.8.1.1 Backticks Syntax
+
+</span>
+
+> \`TEST\`  
+> T\`ES\`T
+
+<br>
+
+<span style="color:#FFD2D2">
+
+### 2.8.1.2 Backticks Syntax Example
+
+</span>
+
+> Backticks Syntax X  
+> TEST
+
+> Backticks Syntax O  
+> `TEST`  
+> T`ES`T
+
+<br>
+
+<span style="color:#FFB4B4">
+
+### 2.8.2 Escaping Backticks
+
+</span>
+
+- 코드로 표현하려는 단어 또는 문장에 1개 이상의 \` 기호가 포함된 경우 단어 또는 문장 전체를 \` 기호 2개로 묶어 표현 가능
+
+<br>
+
+<span style="color:#FFD2D2">
+
+### 2.8.2.1 Escaping Backticks Syntax Cautions
+
+</span>
+
+- 코드로 표현하려는 단어 또는 문장의 끝 부분에 \` 기호가 있을 경우 \` 기호 2개와 표현하려는 \` 기호 사이에 공백 필요
+
+<br>
+
+<span style="color:#FFD2D2">
+
+### 2.8.2.2 Escaping Backticks Syntax
+
+</span>
+
+> \`\` \`TEST\` \`\`  
+> \`\`T\`ES\`T\`\`
+
+<br>
+
+<span style="color:#FFD2D2">
+
+### 2.8.2.3 Escaping Backticks Syntax Example
+
+</span>
+
+> Escaping Backticks Syntax X  
+> TEST
+
+> Escaping Backticks Syntax O  
+> `` `TEST` ``  
+> ``T`ES`T``
+
+<br>
+
+<span style="color:#FFB4B4">
+
+### 2.8.3 Code Blocks
+
+</span>
+
+- Space 공백 4개 또는 Tab 1개를 Code Block으로 표현하고 싶은 모든 줄 앞에 추가
+
+<br>
+
+<span style="color:#FFD2D2">
+
+### 2.8.3.1 Code Blocks Syntax Cautions
+
+</span>
+
+- 호환성을 위해 Code Block 앞 뒤에 빈 줄 추가
+
+<br>
+
+<span style="color:#FFD2D2">
+
+### 2.8.3.2 Code Blocks Syntax
+
+</span>
+
+> TEST  
+> <br>
+> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TEST  
+> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TEST  
+> <br>
+> TEST
+
+<br>
+
+<span style="color:#FFD2D2">
+
+### 2.8.3.3 Code Blocks Syntax Example
+
+</span>
+
+> Code Blocks Syntax X  
+> TEST
+
+> Code Blocks Syntax O  
+> TEST  
+>
+>     TEST    
+>     TEST  
+>
+> TEST
+
+<br>
+
+---
+
+<span style="color:#FF8282">
+
+### 2.8 Horizontal Rules
+
+</span>
+
+- 3개 이상의 \* 기호 또는 \- 기호 또는 \_ 기호를 한 줄에 단독으로 사용하여 수평선 표현 가능
+
+<br>
+
+<span style="color:#FFB4B4">
+
+### 2.8.1 Horizontal Rules Syntax Cautions
+
+</span>
+
+- 호환성을 위해 수평선 앞 뒤에 빈 줄 추가
+
+<br>
+
+<span style="color:#FFB4B4">
+
+### 2.8.2 Horizontal Rules Syntax
+
+</span>
+
+> \*\*\*  
+> <br>
+> \-\-\-  
+> <br>
+> \_\_\_
+
+<br>
+
+<span style="color:#FFB4B4">
+
+### 2.8.3 Horizontal Rules Syntax Example
+
+</span>
+
+> Horizontal Rules Syntax X  
+> <br>
+
+> Horizontal Rules Syntax O
+>
+> ***
+>
+> <br>
+>
+> ---
+>
+> <br>
+>
+> ___
+
+<br>
 
 
 
